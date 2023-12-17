@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main{
+  height: 100vh;
+}
+a{
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black ; /* Верхняя граница черного цвета */
+  padding: 8px 16px;
+  border-radius: 10px;
+
+
+}
+a:hover{
+  cursor: pointer;
+
+  color: white;
+  background-color: rgb(77, 70, 179);
+  transition: all 0.3s ease; 
+}
+
+button{
+  padding: 8px 12px;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.500) ; /* Верхняя граница черного цвета */
+  border-radius: 5px;
+}
+button:hover{
+  cursor: pointer;
+  color: white;
+  background-color: rgb(77, 70, 179);
+  transition: all 0.3s ease; 
+}
+
+/* контейнер */
+.wrapper{
+  max-width: 1320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+/* Tablet styles (e.g., iPad) */
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    padding: 0 10px;
+  }
+}
+
+/* Mobile styles (e.g., smartphones) */
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: 576px;
+    padding: 0 10px;
+  }
+}
+
+/* header */
+header{
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+header > nav > ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  list-style-type: none;
+}
+
+/* input styles */
+.inputStyle{
+  padding: 8px 12px;
+  font-weight: 500;
+}
+.inputStyle:focus{
+  outline: none; /* Убирает обводку при фокусе */
+  background-color: rgba(166, 210, 236, 0.466);
+}
+
+/* formStyle  */
+.formContainer{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-self: center;
+}
+
+/* formStyle */
+.formStyle{
+  padding: 36px 24px;
+  border: 2px solid rgba(32, 123, 146, 0.500) ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.hide{
+  visibility: hidden;
+  display: none;
+}
+.closeFormContainer{
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+.closeForm{
+  background-color: red;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
